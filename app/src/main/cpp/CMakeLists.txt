@@ -1,0 +1,5 @@
+cmake_minimum_required(VERSION 3.10)
+project(s2aim)
+add_library(s2aim SHARED aimbot.cpp)
+find_library(log-lib log)
+target_link_libraries(s2aim ${log-lib} dl)
